@@ -1,12 +1,22 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Ralf Herbrich at 2021-12-25 08:09:55 +0100 
+%% Created for Ralf Herbrich at 2022-07-21 08:44:24 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@unpublished{Her2022j,
+	author = {Herbrich, Ralf},
+	date-added = {2022-07-21 08:38:22 +0200},
+	date-modified = {2022-07-21 08:38:57 +0200},
+	month = {July},
+	note = {Draft Technical Report},
+	title = {On Noisy Additions},
+	year = {2022},
+	url = {https://herbrich.me/papers/noisy_additions.pdf}}
 
 @article{herbrich2020crisp,
 	abstract = {We present CRISP (COVID-19 Risk Score Prediction), a probabilistic graphical model for COVID-19 infection spread through a population based on the SEIR model where we assume access to (1) mutual contacts between pairs of individuals across time across various channels (e.g., Bluetooth contact traces), as well as (2) test outcomes at given times for infection, exposure and immunity tests. Our micro-level model keeps track of the infection state for each individual at every point in time, ranging from susceptible, exposed, infectious to recovered. We develop a Monte Carlo EM algorithm to infer contact-channel specific infection transmission probabilities. Our algorithm uses Gibbs sampling to draw samples of the latent infection status of each individual over the entire time period of analysis, given the latent infection status of all contacts and test outcome data. Experimental results with simulated data demonstrate our CRISP model can be parametrized by the reproduction factor R0 and exhibits population-level infectiousness and recovery time series similar to those of the classical SEIR model. However, due to the individual contact data, this model allows fine grained control and inference for a wide range of COVID-19 mitigation and suppression policy measures. Moreover, the algorithm is able to support efficient testing in a test-trace-isolate approach to contain COVID-19 infection spread. To the best of our knowledge, this is the first model with efficient inference for COVID-19 infection spread based on individual-level contact data; most epidemic models are macro-level models that reason over entire populations.},
