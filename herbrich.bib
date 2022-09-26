@@ -1,21 +1,30 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Ralf Herbrich at 2022-07-21 08:44:24 +0200 
+%% Created for Ralf Herbrich at 2022-09-16 06:58:33 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
 
+@inproceedings{kurle2022vbnn,
+	author = {Kurle, Richard and Herbrich, Ralf and Januschowski, Tim and Wang, Yuyang and Gasthaus, Jan},
+	booktitle = {Advances in Neural Information Procesing Systems 36},
+	date-added = {2022-09-16 06:46:38 +0200},
+	date-modified = {2022-09-16 06:50:02 +0200},
+	title = {On the detrimental effect of invariances in the likelihood for variational inference},
+	year = {2022},
+	url = {https://arxiv.org/pdf/2209.07157.pdf}}
+
 @unpublished{herbrich2022noisyadditions,
-	author = {Herbrich, Ralf},
 	abstract = {So far, most of algorithmic development has relied on the concept of correct computing, in particular at the level of the basic compute unit: the arithmetic logical unit (ALU). With the rapid rise of machine learning (ML) and artificial intelligence (AI) systems, correct computing is no longer strictly required as almost all ML and AI algorithm are based on numerical approximations of (cost) minimization problems. On the other hand, energy-efficiency is becoming increasingly important. While current research into energy-efficient ML/AI focuses on {\em approximate representations} of numbers (e.g., k-bit deep neural networks), we will explore the idea of approximate computing resulting out of under-powering the ALU of a processor. In this note, we will analytically derive the distribution over integers resulting from under-powering an ALU using message-passing to efficiently compute these distributions. One application of knowing this characterization is to use under-powered ALUs to directly implement probabilistic programs where the distribution parameters are directly controlled by the CMOS supply voltage.},
+	author = {Herbrich, Ralf},
 	month = {July},
 	note = {Draft Technical Report},
 	title = {On Noisy Additions},
-	year = {2022},
-	url = {https://herbrich.me/papers/noisy_additions.pdf}}
+	url = {https://herbrich.me/papers/noisy_additions.pdf},
+	year = {2022}}
 
 @article{herbrich2020crisp,
 	abstract = {We present CRISP (COVID-19 Risk Score Prediction), a probabilistic graphical model for COVID-19 infection spread through a population based on the SEIR model where we assume access to (1) mutual contacts between pairs of individuals across time across various channels (e.g., Bluetooth contact traces), as well as (2) test outcomes at given times for infection, exposure and immunity tests. Our micro-level model keeps track of the infection state for each individual at every point in time, ranging from susceptible, exposed, infectious to recovered. We develop a Monte Carlo EM algorithm to infer contact-channel specific infection transmission probabilities. Our algorithm uses Gibbs sampling to draw samples of the latent infection status of each individual over the entire time period of analysis, given the latent infection status of all contacts and test outcome data. Experimental results with simulated data demonstrate our CRISP model can be parametrized by the reproduction factor R0 and exhibits population-level infectiousness and recovery time series similar to those of the classical SEIR model. However, due to the individual contact data, this model allows fine grained control and inference for a wide range of COVID-19 mitigation and suppression policy measures. Moreover, the algorithm is able to support efficient testing in a test-trace-isolate approach to contain COVID-19 infection spread. To the best of our knowledge, this is the first model with efficient inference for COVID-19 infection spread based on individual-level contact data; most epidemic models are macro-level models that reason over entire populations.},
@@ -44,8 +53,7 @@
 	pages = {650--658},
 	title = {Speeding Up Large-Scale Learning with a Social Prior},
 	url = {https://www.herbrich.me/papers/kdd13-socialprior.pdf},
-	year = {2013},
-	bdsk-url-1 = {https://www.herbrich.me/papers/kdd13-socialprior.pdf}}
+	year = {2013}}
 
 @techreport{gartrell2012bayesian,
 	abstract = {Recommender systems are increasingly driving user experiences on the Internet. This personalization is often achieved through the factorization of a large but sparse observation matrix of user-item feedback signals.  In instances where the user's social network is known, its inclusion can significantly improve recommendations for cold start users. There are numerous ways in which the network can be incorporated into a probabilistic graphical model. We propose and investigate two ways for including a social network, either as a Markov Random Field that describes a user similarity in the prior over user features, or an explicit model that treats social links as observations. State of the art performance is reported on the Flixster online social network dataset.},
@@ -71,8 +79,7 @@
 	pages = {678--686},
 	title = {Transparent User Models for Personalization},
 	url = {https://www.herbrich.me/papers/kdd2012-personalization.pdf},
-	year = {2012},
-	bdsk-url-1 = {https://www.herbrich.me/papers/kdd2012-personalization.pdf}}
+	year = {2012}}
 
 @inproceedings{herbrich2012distributed,
 	abstract = {The last ten years have seen a tremendous growth in Internet-based online services such as search, advertising, gaming and social networking.  Today,  it is important to analyze large collections of user interaction data as a first step in building predictive  models  for  these  services  as  well  as  learn  these models in real-time. One of the biggest challenges in this setting is scale:  not only does the sheer scale of data necessitate parallel processing but it also necessitates distributed models; with over 900 million active users at Facebook, any user-specific sets of features in a linear or non-linear model yields models of a size bigger than can be stored in a single system. In this talk, I will give a hands-on introduction to one of the most versatile tools for handling large collections of data with distributed probabilistic models:  the sum-product algorithm for approximate message passing in factor graphs.  I will discuss the application of this algorithm for the specific case of generalized linear models and outline the challenges of both approximate and distributed message passing including an in-depth discussion of expectation propagation and Map-Reduce.},
@@ -100,8 +107,7 @@
 	pages = {1395--1404},
 	title = {Automated Feature Generation From Structured Knowledge},
 	url = {https://www.herbrich.me/papers/cikmfp0337-cheng.pdf},
-	year = {2011},
-	bdsk-url-1 = {https://www.herbrich.me/papers/cikmfp0337-cheng.pdf}}
+	year = {2011}}
 
 @inproceedings{henning2012kerneltopic,
 	abstract = {Latent Dirichlet Allocation models discrete data as a mixture of discrete distributions, using Dirichlet beliefs over the mixture weights. We study a variation of this concept, in which the documents' mixture weight beliefs are replaced with squashed Gaussian distributions. This allows documents to be associated with elements of a Hilbert space, admitting kernel topic models (KTM), modelling temporal, spatial, hierarchical, social and other structure between documents. The main challenge is efficient approximate inference on the latent Gaussian. We present an approximate algorithm cast around a Laplace approximation in a transformed basis. The KTM can also be interpreted as a type of Gaussian process latent variable model, or as a topic model conditional on document features, uncovering links between earlier work in these areas.},
@@ -261,8 +267,7 @@
 	pages = {839--846},
 	title = {Learning to Solve Game Trees},
 	url = {https://www.herbrich.me/papers/p839-stern.pdf},
-	year = {2007},
-	bdsk-url-1 = {https://www.herbrich.me/papers/p839-stern.pdf}}
+	year = {2007}}
 
 @inproceedings{herbrich2006trueskill,
 	abstract = {We present a new Bayesian skill rating system which can be viewed as a generalisation of the Elo system used in Chess. The new system tracks the uncertainty about player skills, explicitly models draws, can deal with any number of competing entities and can infer individual skills from team results. Inference is performed by approximate message passing on a factor graph representation of the model. We present experimental evidence on the increased accuracy and convergence speed of the system compared to Elo and report on our experience with the new rating system running in a large-scale commercial online gaming service under the name of TrueSkill.},
@@ -281,8 +286,7 @@
 	number = {10},
 	title = {Ranking and Matchmaking},
 	url = {https://www.herbrich.me/papers/Game-Developer-Feature-Article-Graepel-Herbrich.pdf},
-	year = {2006},
-	bdsk-url-1 = {https://www.herbrich.me/papers/Game-Developer-Feature-Article-Graepel-Herbrich.pdf}}
+	year = {2006}}
 
 @inproceedings{stern2006bayesianpatternranking,
 	abstract = {We investigate the problem of learning to predict moves in the board game of Go from game records of expert players. In particular, we obtain a probability distribution over legal moves for professional play in a given position. This distribution has numerous applications in computer Go, including serving as an efficient stand-alone Go player. It would also be effective as a move selector and move sorter for game tree search and as a training tool for Go players. Our method has two major components: a) a pattern extraction scheme for efficiently harvesting patterns of given size and shape from expert game records and b) a Bayesian learning algorithm (in two variants) that learns a distribution over the values of a move given a board position based on the local pattern context. The system is trained on 181,000 expert games and shows excellent prediction performance as indicated by its ability to perfectly predict the moves made by professional Go players in 34\% of test positions.},
@@ -291,8 +295,7 @@
 	pages = {873--880},
 	title = {{Bayesian} Pattern Ranking for Move Prediction in the Game of Go},
 	url = {https://www.herbrich.me/papers/p873-stern.pdf},
-	year = {2006},
-	bdsk-url-1 = {https://www.herbrich.me/papers/p873-stern.pdf}}
+	year = {2006}}
 
 @article{agarwal2005roc,
 	abstract = {We study generalization properties of the area under the ROC curve (AUC), a quantity that has been advocated as an evaluation criterion for the bipartite ranking problem. The AUC is a different term than the error rate used for evaluation in classification problems; consequently, existing generalization bounds for the classification error rate cannot be used to draw conclusions about the AUC. In this paper, we define the expected accuracy of a ranking function (analogous to the expected error rate of a classification function), and derive distribution-free probabilistic bounds on the deviation of the empirical AUC of a ranking function (observed on a finite data sequence) from its expected accuracy. We derive both a large deviation bound, which serves to bound the expected accuracy of a ranking function in terms of its empirical AUC on a test sequence, and a uniform convergence bound, which serves to bound the expected accuracy of a learned ranking function in terms of its empirical AUC on a training sequence. Our uniform convergence bound is expressed in terms of a new set of combinatorial parameters that we term the bipartite rank-shatter coefficients; these play the same role in our result as do the standard VC-dimension related shatter coefficients (also known as the growth function) in uniform convergence results for the classification error rate. A comparison of our result with a recent uniform convergence result derived by Freund et al. (2003) for a quantity closely related to the AUC shows that the bound provided by our result can be considerably tighter.},
@@ -367,8 +370,7 @@
 	pages = {9--16},
 	title = {A Large Deviation Bound for the Area Under the {ROC} Curve},
 	url = {https://www.herbrich.me/papers/nips04-auc.pdf},
-	year = {2004},
-	bdsk-url-1 = {https://www.herbrich.me/papers/nips04-auc.pdf}}
+	year = {2004}}
 
 @inproceedings{graepel2004learningtofight,
 	abstract = {We apply reinforcement learning to the problem of finding good policies for a fighting agent in a commercial computer game. The learning agent is trained using the SARSA algorithm for on-policy learning of an action-value function represented by linear and neural network function approximators. We discuss the selection and construction of features, actions, and rewards as well as other design choices necessary to integrate the learning process into the game. The learning agent is trained against the built-in AI of the game with different rewards encouraging aggressive or defensive behaviour. We show that the learning agent finds interesting (and partly near optimal) policies in accordance with the reward functions provided. We also discuss the particular challenges arising in the application of reinforcement learning to the domain of computer games.},
@@ -405,8 +407,7 @@
 	publisher = {The MIT Press},
 	title = {Semi-Definite Programming by Perceptron Learning},
 	url = {https://www.herbrich.me/papers/sdpm-pla.pdf},
-	year = {2003},
-	bdsk-url-1 = {https://www.herbrich.me/papers/sdpm-pla.pdf}}
+	year = {2003}}
 
 @inproceedings{gretton2003kmi,
 	abstract = {We introduce a new contrast function, the kernel mutual information (KMI), to measure the degree of independence of continuous random variables. This contrast function provides an approximate upper bound on the mutual information, as measured near independence, and is based on a kernel density estimate of the mutual information between a discretised approximation of the continuous random variables. We show that Bach and Jordan's kernel generalised variance (KGV) is also an upper bound on the same kernel density estimate, but is looser. Finally, we suggest that the addition of a regularising term in the KGV causes it to approach the KMI, which motivates the introduction of this regularisation.},
@@ -451,8 +452,7 @@
 	title = {A {PAC-Bayesian} Margin Bound for Linear Classifiers},
 	url = {https://www.herbrich.me/papers/ieee-pacbayes.pdf},
 	volume = {48},
-	year = {2002},
-	bdsk-url-1 = {https://www.herbrich.me/papers/ieee-pacbayes.pdf}}
+	year = {2002}}
 
 @incollection{herbrich2002learning,
 	author = {Herbrich, Ralf and Williamson, Robert C},
@@ -562,8 +562,7 @@
 	publisher = {The MIT Press},
 	title = {The Kernel Gibbs Sampler},
 	url = {https://www.herbrich.me/papers/kernel-gibbs-sampler.pdf},
-	year = {2000},
-	bdsk-url-1 = {https://www.herbrich.me/papers/kernel-gibbs-sampler.pdf}}
+	year = {2000}}
 
 @inproceedings{graepel2000sparse,
 	abstract = {We provide small sample size bounds on the generalisation error of linear classiers that are sparse in their dual representation given by the expansion coecients of the weight vector in terms of the training data. These results theoretically justify algorithms like the Support Vector Machine, the Relevance Vector Machine and K-nearest-neighbour. The
