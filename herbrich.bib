@@ -1,12 +1,35 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Ralf Herbrich at 2022-09-16 06:58:33 +0200 
+%% Created for Ralf Herbrich at 2024-06-02 23:51:08 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{MatSchHer2024a,
+	abstract = {One of the biggest challenges to modern deep reinforcement learning (DRL) algorithms is sample efficiency. Many approaches learn a world model in order to train an agent entirely in imagination, eliminating the need for direct environ- ment interaction during training. However, these methods often suffer from either a lack of imagi- nation accuracy, exploration capabilities, or run- time efficiency. We propose HIEROS, a hierar- chical policy that learns time abstracted world representations and imagines trajectories at mul- tiple time scales in latent space. HIEROS uses an S5 layer-based world model, which predicts next world states in parallel during training and itera- tively during environment interaction. Due to the special properties of S5 layers, our method can train in parallel and predict next world states iter- atively during imagination. This allows for more efficient training than RNN-based world models and more efficient imagination than Transformer- based world models. We show that our approach outperforms the state of the art in terms of mean and median normalized human score on the Atari 100k benchmark, and that our proposed world model is able to predict complex dynamics very accurately. We also show that HIEROS displays superior exploration capabilities compared to existing approaches.},
+	author = {Mattes, Paul and Schlosser, Rainer and Herbrich, Ralf},
+	booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+	date-added = {2024-06-02 23:46:04 +0200},
+	date-modified = {2024-06-02 23:51:01 +0200},
+	title = {Hieros: Hierarchical Imagination on Structured State Space Sequence World Models},
+	url = {https://herbrich.me/papers/hieros_icml-8.pdf},
+	year = {2024},
+	bdsk-url-1 = {https://herbrich.me/papers/hieros_icml-8.pdf},
+}
+
+@inproceedings{AldHer2024a,
+	abstract = {The widespread use of artificial intelligence requires finding energy-efficient paradigms for the field. We propose to reduce the energy consumption of Gaussian process regression using low-precision floating-point representations. We explore how low-precision representations impact the results of Gaussian process regression and how data set properties, implementation approach, model performance, and energy consumption interact. Our findings show that a well-conditioned kernel matrix allows reducing the energy consumption by up to 89.01% for 98.08% of arithmetic operations with little to no impact on model performance. Our findings are relevant whenever one needs to invert a symmetric full-rank matrix.},
+	author = {Alder, Nicolas and Herbrich, Ralf},
+	booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+	date-added = {2024-05-30 21:16:42 +0200},
+	date-modified = {2024-05-30 21:19:42 +0200},
+	title = {Energy-Efficient Gaussian Processes Using Low-Precision Arithmetic},
+	url = {https://www.herbrich.me/papers/low_precision_gp_cameraReady_final.pdf},
+	year = {2024},
+	bdsk-url-1 = {https://www.herbrich.me/papers/low_precision_gp_cameraReady_final.pdf}}
 
 @inproceedings{kurle2022vbnn,
 	author = {Kurle, Richard and Herbrich, Ralf and Januschowski, Tim and Wang, Yuyang and Gasthaus, Jan},
@@ -14,8 +37,9 @@
 	date-added = {2022-09-16 06:46:38 +0200},
 	date-modified = {2022-09-16 06:50:02 +0200},
 	title = {On the detrimental effect of invariances in the likelihood for variational inference},
+	url = {https://arxiv.org/pdf/2209.07157.pdf},
 	year = {2022},
-	url = {https://arxiv.org/pdf/2209.07157.pdf}}
+	bdsk-url-1 = {https://arxiv.org/pdf/2209.07157.pdf}}
 
 @unpublished{herbrich2022noisyadditions,
 	abstract = {So far, most of algorithmic development has relied on the concept of correct computing, in particular at the level of the basic compute unit: the arithmetic logical unit (ALU). With the rapid rise of machine learning (ML) and artificial intelligence (AI) systems, correct computing is no longer strictly required as almost all ML and AI algorithm are based on numerical approximations of (cost) minimization problems. On the other hand, energy-efficiency is becoming increasingly important. While current research into energy-efficient ML/AI focuses on {\em approximate representations} of numbers (e.g., k-bit deep neural networks), we will explore the idea of approximate computing resulting out of under-powering the ALU of a processor. In this note, we will analytically derive the distribution over integers resulting from under-powering an ALU using message-passing to efficiently compute these distributions. One application of knowing this characterization is to use under-powered ALUs to directly implement probabilistic programs where the distribution parameters are directly controlled by the CMOS supply voltage.},
@@ -24,7 +48,8 @@
 	note = {Draft Technical Report},
 	title = {On Noisy Additions},
 	url = {https://herbrich.me/papers/noisy_additions.pdf},
-	year = {2022}}
+	year = {2022},
+	bdsk-url-1 = {https://herbrich.me/papers/noisy_additions.pdf}}
 
 @article{herbrich2020crisp,
 	abstract = {We present CRISP (COVID-19 Risk Score Prediction), a probabilistic graphical model for COVID-19 infection spread through a population based on the SEIR model where we assume access to (1) mutual contacts between pairs of individuals across time across various channels (e.g., Bluetooth contact traces), as well as (2) test outcomes at given times for infection, exposure and immunity tests. Our micro-level model keeps track of the infection state for each individual at every point in time, ranging from susceptible, exposed, infectious to recovered. We develop a Monte Carlo EM algorithm to infer contact-channel specific infection transmission probabilities. Our algorithm uses Gibbs sampling to draw samples of the latent infection status of each individual over the entire time period of analysis, given the latent infection status of all contacts and test outcome data. Experimental results with simulated data demonstrate our CRISP model can be parametrized by the reproduction factor R0 and exhibits population-level infectiousness and recovery time series similar to those of the classical SEIR model. However, due to the individual contact data, this model allows fine grained control and inference for a wide range of COVID-19 mitigation and suppression policy measures. Moreover, the algorithm is able to support efficient testing in a test-trace-isolate approach to contain COVID-19 infection spread. To the best of our knowledge, this is the first model with efficient inference for COVID-19 infection spread based on individual-level contact data; most epidemic models are macro-level models that reason over entire populations.},
@@ -33,7 +58,8 @@
 	journal = {arXiv:2006.04942},
 	title = {{CRISP}: A Probabilistic Model for Individual-Level {COVID-19} Infection Risk Estimation Based on Contact Data},
 	url = {https://arxiv.org/pdf/2006.04942.pdf},
-	year = {2020}}
+	year = {2020},
+	bdsk-url-1 = {https://arxiv.org/pdf/2006.04942.pdf}}
 
 @inproceedings{he2014advertising,
 	abstract = {Online advertising allows advertisers to only bid and pay for measurable user responses, such as clicks on ads. As a consequence, click prediction systems are central to most on-line advertising systems. With over 750 million daily active users and over 1 million active advertisers, predicting clicks on Facebook ads is a challenging machine learning task. In this paper we introduce a model which combines decision trees with logistic regression, outperforming either of these methods on its own by over 3%, an improvement with significant impact to the overall system performance. We then explore how  a number of fundamental parameters impact the final prediction performance of our system.  Not surprisingly, the most important thing is to have the right features: those capturing historical information about the user or ad dominate other types of features. Once we have the right features and the right model (decisions trees plus logistic regression), other factors play small roles (though even small improvements are important at scale). Picking the optimal handling for data freshness, learning rate schema and data sampling improve the model slightly, though much less than adding a high-value feature,  or picking the right model to begin with.},
@@ -43,7 +69,8 @@
 	pages = {1--9},
 	title = {Practical Lessons from Predicting Clicks on Ads at {F}acebook},
 	url = {https://www.herbrich.me/papers/adclicksfacebook.pdf},
-	year = {2014}}
+	year = {2014},
+	bdsk-url-1 = {https://www.herbrich.me/papers/adclicksfacebook.pdf}}
 
 @inproceedings{chakrabarti2013speeding,
 	abstract = {Slow  convergence  and  poor  initial  accuracy  are  two  problems  that  plague  efforts  to  use  very  large  feature  sets  in online learning.  This is especially true when only a few features are active in any training example, and the frequency of activations of different features is skewed.  We show how these problems can be mitigated if a graph of relationships between features is known.  We study this problem in a fully Bayesian  setting,  focusing  on  the  problem  of  using  Facebook  user-IDs  as  features,  with  the  social  network  giving the relationship structure.  Our analysis uncovers significant problems with the obvious regularizations, and motivates a two-component  mixture-model social  prior that  is  provably better.  Empirical results on large-scale click prediction problems show that our algorithm can learn as well as the baseline  with  12M fewer  training  examples,  and  continuously outperforms it for over 60M examples.  On a second problem using binned features, our model outperforms the baseline even after the latter sees 5x as much data.},
@@ -53,7 +80,8 @@
 	pages = {650--658},
 	title = {Speeding Up Large-Scale Learning with a Social Prior},
 	url = {https://www.herbrich.me/papers/kdd13-socialprior.pdf},
-	year = {2013}}
+	year = {2013},
+	bdsk-url-1 = {https://www.herbrich.me/papers/kdd13-socialprior.pdf}}
 
 @techreport{gartrell2012bayesian,
 	abstract = {Recommender systems are increasingly driving user experiences on the Internet. This personalization is often achieved through the factorization of a large but sparse observation matrix of user-item feedback signals.  In instances where the user's social network is known, its inclusion can significantly improve recommendations for cold start users. There are numerous ways in which the network can be incorporated into a probabilistic graphical model. We propose and investigate two ways for including a social network, either as a Markov Random Field that describes a user similarity in the prior over user features, or an explicit model that treats social links as observations. State of the art performance is reported on the Flixster online social network dataset.},
@@ -61,7 +89,8 @@
 	institution = {CU Technical Report CU-CS-1092-12},
 	title = {A {Bayesian} Treatment of Social Links in Recommender Systems},
 	url = {https://www.herbrich.me/papers/ucb511101092internet.pdf},
-	year = {2012}}
+	year = {2012},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ucb511101092internet.pdf}}
 
 @inproceedings{dietz2012layering,
 	abstract = {Traditionally, social network analyses are applied to data from a particular social domain. With the advent of online social networks such as Facebook, we observe an aggregate of various social domains resulting in a layered mix of professional contacts, family ties, and different circles. These aggregates dilute the community structure. We provide a method for de-layering social networks according to shared interests. Instead of relying on changes in the edge density, our shared taste model uses content of users to disambiguate the underlying shared interest of each friendship. We successfully de-layer real world networks from LibraryThing and Boards.ie, obtaining topics that significantly outperform LDA on unsupervised prediction of group membership.},
@@ -69,7 +98,8 @@
 	booktitle = {International AAAI Conference on Web and Social Media},
 	title = {De-Layering Social Networks by Shared Tastes of Friendships},
 	url = {https://www.herbrich.me/papers/icwsm2012.pdf},
-	year = {2012}}
+	year = {2012},
+	bdsk-url-1 = {https://www.herbrich.me/papers/icwsm2012.pdf}}
 
 @inproceedings{elarini2012transparent,
 	abstract = {Personalization is a ubiquitous phenomenon in our daily online experience. While such technology is critical for helping us combat the overload of information we face, in many cases, we may not even realize that our results are being tailored to our personal tastes and preferences. Worse yet, when such a system makes a mistake, we have little recourse to correct it. In this work, we propose a framework for addressing this problem by developing a new user-interpretable feature set upon which to base personalized recommendations. These features, which we call badges, represent fundamental traits of users (e.g., ``vegetarian'' or ``Apple fanboy'') inferred by modeling the interplay between a user's behavior and self-reported identity. Specifically, we consider the microblogging site Twitter, where users provide short descriptions of themselves in their profiles, as well as perform actions such as tweeting and retweeting. Our approach is based on the insight that we can define badges using high precision, low recall rules (e.g., ``Twitter profile contains the phrase `Apple fanboy'''), and with enough data, generalize to other users by observing shared behavior. We develop a fully Bayesian, generative model that describes this interaction, while allowing us to avoid the pitfalls associated with having positive-only data. Experiments on real Twitter data demonstrate the effectiveness of our model at capturing rich and interpretable user traits that can be used to provide transparency for personalization.},
@@ -79,7 +109,8 @@
 	pages = {678--686},
 	title = {Transparent User Models for Personalization},
 	url = {https://www.herbrich.me/papers/kdd2012-personalization.pdf},
-	year = {2012}}
+	year = {2012},
+	bdsk-url-1 = {https://www.herbrich.me/papers/kdd2012-personalization.pdf}}
 
 @inproceedings{herbrich2012distributed,
 	abstract = {The last ten years have seen a tremendous growth in Internet-based online services such as search, advertising, gaming and social networking.  Today,  it is important to analyze large collections of user interaction data as a first step in building predictive  models  for  these  services  as  well  as  learn  these models in real-time. One of the biggest challenges in this setting is scale:  not only does the sheer scale of data necessitate parallel processing but it also necessitates distributed models; with over 900 million active users at Facebook, any user-specific sets of features in a linear or non-linear model yields models of a size bigger than can be stored in a single system. In this talk, I will give a hands-on introduction to one of the most versatile tools for handling large collections of data with distributed probabilistic models:  the sum-product algorithm for approximate message passing in factor graphs.  I will discuss the application of this algorithm for the specific case of generalized linear models and outline the challenges of both approximate and distributed message passing including an in-depth discussion of expectation propagation and Map-Reduce.},
@@ -89,7 +120,8 @@
 	pages = {203--204},
 	title = {Distributed, Real-time {Bayesian} Learning in Online Services},
 	url = {https://www.herbrich.me/papers/recsys2012.pdf},
-	year = {2012}}
+	year = {2012},
+	bdsk-url-1 = {https://www.herbrich.me/papers/recsys2012.pdf}}
 
 @inproceedings{passos2011informationvalue,
 	abstract = {Most recommendation systems are trained to predict behavioral data and then used to generate more such data by recommending items and receiving feedback on the quality of these recommendations. This data in then fed back into the training process. This creates a feedback loop: as long as the low-cost way to interact with the service is through the recommender, the recommender will only ever see behavioral data on the items it chooses. This process can lead to hidden biases, as it effectively limits how much information the recommender system will ever see.  On the other hand, there is a cost to making exploratory recommendations, as they should, myopically, be worse than the best bets of a recommendation system. In this paper we explore the notion that recommender systems are a special kind of active learning agents, with the peculiarity that the cost of asking for the label of an instance depends on its true label, as the cost of showing a bad recommendation when exploring is higher than the cost of showing a good recommendation.},
@@ -98,7 +130,8 @@
 	pages = {9--14},
 	title = {A Penny for Your Thoughts? The Value of Information in Recommendation Systems},
 	url = {https://www.herbrich.me/papers/passos11penny.pdf},
-	year = {2011}}
+	year = {2011},
+	bdsk-url-1 = {https://www.herbrich.me/papers/passos11penny.pdf}}
 
 @inproceedings{cheng2011featuresfromknowledge,
 	abstract = {The prediction accuracy of any learning algorithm highly depends on the quality of the selected features; but often, the task of feature construction and selection is tedious and non-scalable. In recent years, however, there have been numerous projects with the goal of constructing general-purpose or domain-specific knowledge bases with entity-relationship-entity triples extracted from various Web sources or collected from user communities, e.g., YAGO, DBpedia, Free- base, UMLS, etc. This paper advocates the simple and yet far-reaching idea that the structured knowledge contained in such knowledge bases can be exploited to automatically extract features for general learning tasks. We introduce an expressive graph-based language for extracting features from such knowledge bases and a theoretical framework for constructing feature vectors from the extracted features. Our experimental evaluation on different learning scenarios provides evidence that the features derived through our framework can considerably improve the prediction accuracy, especially when the labeled data at hand is sparse.},
@@ -107,7 +140,8 @@
 	pages = {1395--1404},
 	title = {Automated Feature Generation From Structured Knowledge},
 	url = {https://www.herbrich.me/papers/cikmfp0337-cheng.pdf},
-	year = {2011}}
+	year = {2011},
+	bdsk-url-1 = {https://www.herbrich.me/papers/cikmfp0337-cheng.pdf}}
 
 @inproceedings{henning2012kerneltopic,
 	abstract = {Latent Dirichlet Allocation models discrete data as a mixture of discrete distributions, using Dirichlet beliefs over the mixture weights. We study a variation of this concept, in which the documents' mixture weight beliefs are replaced with squashed Gaussian distributions. This allows documents to be associated with elements of a Hilbert space, admitting kernel topic models (KTM), modelling temporal, spatial, hierarchical, social and other structure between documents. The main challenge is efficient approximate inference on the latent Gaussian. We present an approximate algorithm cast around a Laplace approximation in a transformed basis. The KTM can also be interpreted as a type of Gaussian process latent variable model, or as a topic model conditional on document features, uncovering links between earlier work in these areas.},
@@ -116,7 +150,8 @@
 	pages = {511--519},
 	title = {Kernel Topic Models},
 	url = {https://www.herbrich.me/papers/ktm.pdf},
-	year = {2012}}
+	year = {2012},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ktm.pdf}}
 
 @inproceedings{kohli2011colonelblotto,
 	abstract = {We show how online social networks such as Facebook can be used in Behavioral Game Theory research. We report the deployment of a Facebook application Project Waterloo that allows users to play the Colonel Blotto game against their friends and strangers. Unlike conventional studies performed in the laboratory environment, which rely on monetary incentives to attract human subjects to play games, our framework does not use money and instead relies on reputation and entertainment incentives. We describe the Facebook application we created for conducting this experiment, and perform a preliminary analysis of the data collected in the game. We conclude by discussing the advantages of our approach and list some ideas for future work.},
@@ -124,7 +159,8 @@
 	booktitle = {Proceedings of the 2nd Workshop on Computational Social Science and the Wisdom of Crowds},
 	title = {Behavioral Game Theory on Online Social Networks: Colonel Blotto is on {Facebook}},
 	url = {https://www.herbrich.me/papers/nips_blotto_2011.pdf},
-	year = {2011}}
+	year = {2011},
+	bdsk-url-1 = {https://www.herbrich.me/papers/nips_blotto_2011.pdf}}
 
 @inproceedings{xu2011sociablekillers,
 	abstract = {Online video games can be seen as medium for the formation and maintenance of social relationships. In this paper, we explore what social relationships mean under the context of online First-Person Shooter (FPS) games, how these relationships influence game experience, and how players manage them. We combine qualitative interview and quantitative game log data, and find that despite the gap between the non-persistent game world and potentially persistent social relationships, a diversity of social relationships emerge and play a central role in the enjoyment of online FPS games. We report the forms, development, and impact of such relationships, and discuss our findings in light of design implications and comparison with other game genres.},
@@ -133,7 +169,8 @@
 	pages = {197--206},
 	title = {Sociable Killers: Understanding Social Relationships in an Online First-Person Shooter Game},
 	url = {https://www.herbrich.me/papers/CSCW11.pdf},
-	year = {2011}}
+	year = {2011},
+	bdsk-url-1 = {https://www.herbrich.me/papers/CSCW11.pdf}}
 
 @inproceedings{bachrach2010fingerprinting,
 	abstract = {We consider fingerprinting methods for collaborative filtering (CF) systems. In general, CF systems show their real strength when supplied with enormous data sets. Earlier work already suggests sketching techniques to handle massive amounts of information, but most prior analysis has so far been limited to non-ranking application scenarios and has focused mainly on a theoretical analysis. We demonstrate how to use fingerprinting methods to compute a family of rank correlation coefficients. Our methods allow identifying users who have similar rankings over a certain set of items, a problem that lies at the heart of CF applications. We show that our method allows approximating rank correlations with high accuracy and confidence. We examine the suggested methods empirically through a recommender system for the Netflix dataset, showing that the required fingerprint sizes are even smaller than the theoretical analysis suggests. We also explore the of use standard hash functions rather than min-wise independent hashes and the relation between the quality of the final recommendations and the fingerprint size.},
@@ -142,7 +179,8 @@
 	pages = {25--36},
 	title = {Fingerprinting Ratings for Collaborative Filtering - Theoretical and Empirical Analysis},
 	url = {https://www.herbrich.me/papers/spire10.pdf},
-	year = {2010}}
+	year = {2010},
+	bdsk-url-1 = {https://www.herbrich.me/papers/spire10.pdf}}
 
 @inproceedings{graepel2010bayesianctr,
 	abstract = {We describe a new Bayesian click-through rate (CTR) prediction algorithm used for Sponsored Search in Microsoft's Bing search engine. The algorithm is based on a probit regression model that maps discrete or real-valued input features to probabilities. It maintains Gaussian beliefs over weights of the model and performs Gaussian online updates derived from approximate message passing. Scalability of the algorithm is ensured through a principled weight pruning procedure and an approximate parallel implementation. We discuss the challenges arising from evaluating and tuning the predictor as part of the complex system of sponsored search where the predictions made by the algorithm decide about future training sample composition. Finally, we show experimental results from the production system and compare to a calibrated Naive Bayes algorithm.},
@@ -151,7 +189,8 @@
 	pages = {13--20},
 	title = {Web-Scale Bayesian Click-Through Rate Prediction for Sponsored Search Advertising in Microsoft's {B}ing Search Engine},
 	url = {https://www.herbrich.me/papers/adpredictor.pdf},
-	year = {2010}}
+	year = {2010},
+	bdsk-url-1 = {https://www.herbrich.me/papers/adpredictor.pdf}}
 
 @inproceedings{kasneci2010knowledgecorroboration,
 	abstract = {Current knowledge bases suffer from either low coverage or low accuracy. The underlying hypothesis of this work is that user feedback can greatly improve the quality of automatically extracted knowledge bases. The feedback could help quantify the uncertainty associated with the stored statements and would enable mechanisms for searching, ranking and reasoning at entity-relationship level. Most importantly, a principled model for exploiting user feedback to learn the truth values of statements in the knowledge base would be a major step forward in addressing the issue of knowledge base curation. We present a family of probabilistic graphical models that builds on user feedback and logical inference rules derived from the popular Semantic-Web formalism of RDFS. Through internal inference and belief propagation, these models can learn both, the truth values of the statements in the knowledge base and the reliabilities of the users who give feedback. We demonstrate the viability of our approach in extensive experiments on real-world datasets, with feedback collected from Amazon Mechanical Turk.},
@@ -160,7 +199,8 @@
 	pages = {1--18},
 	title = {{Bayesian} Knowledge Corroboration with Logical Rules and User Feedback},
 	url = {https://www.herbrich.me/papers/ecml10.pdf},
-	year = {2010}}
+	year = {2010},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ecml10.pdf}}
 
 @inproceedings{paquet2010,
 	abstract = {Many online service systems leverage user-generated content from Web 2.0 style platforms such as Wikipedia, Twitter, Facebook, and many more. Often, the value lies in the freshness of this information (e.g. tweets, event-based articles, blog posts, etc.). This freshness poses a challenge for supervised learning models as they frequently have to deal with previously unseen features. In this paper we address the problem of online classification for tweets, namely, how can a classifier be updated in an online manner, so that it can correctly classify the latest hype on Twitter? We propose a two-step strategy to solve this problem. The first step follows an active learning strategy that enables the selection of tweets for which a label would be most useful; the selected tweet is then forwarded to Amazon Mechanical Turk where it is labeled by multiple users. The second step builds on a Bayesian corroboration model that aggregates the noisy labels provided by the users by taking their reliabilities into account.},
@@ -168,7 +208,8 @@
 	booktitle = {Proceedings of Computational Social Science and the Wisdom of Crowds Workshop},
 	title = {{Vuvuzelas \& Active Learning for Online Classification}},
 	url = {https://www.herbrich.me/papers/vuvuzela.pdf},
-	year = {2010}}
+	year = {2010},
+	bdsk-url-1 = {https://www.herbrich.me/papers/vuvuzela.pdf}}
 
 @inproceedings{stern2010collaborativeexperts,
 	abstract = {We consider the task of assigning experts from a portfolio of specialists in order to solve a set of tasks. We apply a Bayesian model which combines collaborative filtering with a feature-based description of tasks and experts to yield a general framework for managing a portfolio of experts. The model learns an embedding of tasks and problems into a latent space in which affinity is measured by the inner product. The model can be trained incrementally and can track non-stationary data, tracking potentially changing expert and task characteristics. The approach allows us to use a principled decision theoretic framework for expert selection, allowing the user to choose a utility function that best suits their objectives. The model component for taking into account the performance feedback data is pluggable, allowing flexibility. We apply the model to manage a portfolio of algorithms to solve hard combinatorial problems. This is a well studied area and we demonstrate a large improvement on the state of the art in one domain (constraint solving) and in a second domain (combinatorial auctions) created a portfolio that performed significantly better than any single algorithm.},
@@ -176,7 +217,8 @@
 	booktitle = {Proceedings of the 24th AAAI Conference on Artificial Intelligence},
 	title = {Collaborative Expert Portfolio Management},
 	url = {https://www.herbrich.me/papers/matchboxqbf.pdf},
-	year = {2010}}
+	year = {2010},
+	bdsk-url-1 = {https://www.herbrich.me/papers/matchboxqbf.pdf}}
 
 @inproceedings{zaman2010informationspreading,
 	abstract = {We present a new methodology for predicting the spread of information in a social network. We focus on the Twitter network, where information is in the form of 140 character messages called tweets, and information is spread by users forwarding tweets, a practice known as retweeting. Using data of who and what was retweeted, we train a probabilistic collaborative filter model to predict future retweets. We find that the most important features for prediction are the identity of the source of the tweet and retweeter. Our methodology is quite flexible and be used as a basis for other prediction models in social networks.},
@@ -184,7 +226,8 @@
 	booktitle = {Proceedings of Computational Social Science and the Wisdom of Crowds Workshop},
 	title = {Predicting Information Spreading in Twitter},
 	url = {https://www.herbrich.me/papers/nips10_twitter.pdf},
-	year = {2010}}
+	year = {2010},
+	bdsk-url-1 = {https://www.herbrich.me/papers/nips10_twitter.pdf}}
 
 @inproceedings{zhang2010bayesian,
 	abstract = {Many real world applications employ multi-variate performance measures and each example can belong to multiple classes. The currently most popular approaches train an SVM for each class, followed by ad-hoc thresholding. Probabilistic models using Bayesian decision theory are also commonly adopted. In this paper, we propose a Bayesian online multi-label classification framework (BOMC) which learns a probabilistic linear classifier. The likelihood is modeled by a graphical model similar to TrueSkill, and inference is based on Gaussian density filtering with expectation propagation. Using samples from the posterior, we label the testing data by maximizing the expected F1-score. Our experiments on Reuters1-v2 dataset show BOMC compares favorably to the state-of-the-art online learners in macro-averaged F1-score and training time.},
@@ -193,7 +236,8 @@
 	pages = {956--963},
 	title = {{Bayesian} Online Learning for Multi-label and Multi-variate Performance Measures},
 	url = {https://www.herbrich.me/papers/zhang10b.pdf},
-	year = {2010}}
+	year = {2010},
+	bdsk-url-1 = {https://www.herbrich.me/papers/zhang10b.pdf}}
 
 @inproceedings{bachrach2009sketching,
 	abstract = {Collaborative filtering (CF) shares information between users to provide each with recommendations. Previous work suggests using sketching techniques to handle massive data sets in CF systems, but only allows testing whether users have a high proportion of items they have both ranked. We show how to determine the correlation between the rankings of two users, using concise sketches of the rankings. The sketches allow approximating Kendall's Tau, a known rank correlation, with high accuracy $\epsilon$ and high confidence $1-\delta$. The required sketch size is logarithmic in the confidence and polynomial in the accuracy.},
@@ -202,7 +246,8 @@
 	pages = {344--352},
 	title = {Sketching Algorithms for Approximating Rank Correlations in Collaborative Filtering Systems},
 	url = {https://www.herbrich.me/papers/spire09.pdf},
-	year = {2009}}
+	year = {2009},
+	bdsk-url-1 = {https://www.herbrich.me/papers/spire09.pdf}}
 
 @article{flach2009conferencereview,
 	abstract = {The SIGKDD'09 Research Track received 537 paper submissions, which were reviewed by a Program Committee of 199 members, and a Senior Program Committee of 22 members. We used techniques from artificial intelligence and data mining to streamline and support this complicated process at three crucial stages: bidding by PC members on papers, assigning papers to reviewers, and calibrating scores obtained from the reviews. In this paper we report on the approaches taken, evaluate how well they worked, and describe some further work done after the conference.},
@@ -213,7 +258,8 @@
 	title = {Novel Tools to Streamline the Conference Review Process: Experiences from SIGKDD'09},
 	url = {https://www.herbrich.me/papers/ReviewerCalibration.pdf},
 	volume = {11},
-	year = {2009}}
+	year = {2009},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ReviewerCalibration.pdf}}
 
 @inproceedings{schwaighofer2009clustering,
 	abstract = {We present an efficient Bayesian online learning algorithm for clustering vectors of binary values based on a well known model, the mixture of Bernoulli profiles. The model includes conjugate Beta priors over the success probabilities and maintains discrete probability distributions for cluster assignments. Clustering is then formulated as inference in a factor graph which is solved efficiently using online approximate message passing. The resulting algorithm has three key features: a) it requires only a single pass across the data and can hence be used on data streams, b) it maintains the uncertainty of parameters and cluster assignments, and c) it implements an automatic step size adaptation based on the current model uncertainty. The model is tested on an artificially generated toy dataset and applied to a large scale real-world data set from online advertising, the data being online ads characterized by the set of keywords to which they have been subscribed. The proposed approach scales well for large datasets, and compares favorably to other clustering algorithms on the ads dataset. As a concrete application to online advertising we show how the learned model can be used to recommend new keywords for given ads.},
@@ -222,7 +268,8 @@
 	pages = {27--36},
 	title = {Scalable Clustering and Keyword Suggestion for Online Advertisements},
 	url = {https://www.herbrich.me/papers/kdd2009.pdf},
-	year = {2009}}
+	year = {2009},
+	bdsk-url-1 = {https://www.herbrich.me/papers/kdd2009.pdf}}
 
 @inproceedings{stern2009matchbox,
 	abstract = {We present a probabilistic model for generating personalised recommendations of items to users of a web service. The Matchbox system makes use of content information in the form of user and item meta data in combination with collaborative filtering information from previous user behavior in order to predict the value of an item for a user. Users and items are represented by feature vectors which are mapped into a low-dimensional trait space in which similarity is measured in terms of inner products. The model can be trained from different types of feedback in order to learn user-item preferences. Here we present three alternatives: direct observation of an absolute rating each user gives to some items, observation of a binary preference (like/ don't like) and observation of a set of ordinal ratings on a userspecific scale. Efficient inference is achieved by approximate message passing involving a combination of Expectation Propagation (EP) and Variational Message Passing. We also include a dynamics model which allows an item's popularity, a user's taste or a user's personal rating scale to drift over time. By using Assumed-Density Filtering (ADF) for training, the model requires only a single pass through the training data. This is an on-line learning algorithm capable of incrementally taking account of new data so the system can immediately reflect the latest user preferences. We evaluate the performance of the algorithm on the MovieLens and Netflix data sets consisting of approximately 1,000,000 and 100,000,000 ratings respectively. This demonstrates that training the model using the on-line ADF approach yields state-of-the-art performance with the option of improving performance further if computational resources are available by performing multiple EP passes over the training data.},
@@ -231,7 +278,8 @@
 	pages = {111--120},
 	title = {{Matchbox}: Large Scale Online {Bayesian} Recommendations},
 	url = {https://www.herbrich.me/papers/www09.pdf},
-	year = {2009}}
+	year = {2009},
+	bdsk-url-1 = {https://www.herbrich.me/papers/www09.pdf}}
 
 @inproceedings{graepel2008kdd,
 	author = {Graepel, Thore and Herbrich, Ralf},
@@ -239,7 +287,8 @@
 	pages = {2},
 	title = {Large Scale Data Analysis and Modelling in Online Services and Advertising},
 	url = {https://www.herbrich.me/papers/kdd2008.pdf},
-	year = {2008}}
+	year = {2008},
+	bdsk-url-1 = {https://www.herbrich.me/papers/kdd2008.pdf}}
 
 @inproceedings{dangauthier2007ttt,
 	abstract = {We extend the Bayesian skill rating system TrueSkill to infer entire time series of skills of players by smoothing through time instead of filtering. The skill of each participating player, say, every year is represented by a latent skill variable which is affected by the relevant game outcomes that year, and coupled with the skill variables of the previous and subsequent year. Inference in the resulting factor graph is carried out by approximate message passing (EP) along the time series of skills. As before the system tracks the uncertainty about player skills, explicitly models draws, can deal with any number of competing entities and can infer individual skills from team results. We extend the system to estimate player-specific draw margins. Based on these models we present an analysis of the skill curves of important players in the history of chess over the past 150 years. Results include plots of players' lifetime skill development as well as the ability to compare the skills of different players across time. Our results indicate that a) the overall playing strength has increased over the past 150 years, and b) that modelling a player's ability to force a draw provides significantly better predictive power.},
@@ -249,7 +298,8 @@
 	publisher = {The MIT Press},
 	title = {TrueSkill Through Time: Revisiting the History of Chess},
 	url = {https://www.herbrich.me/papers/ttt.pdf},
-	year = {2007}}
+	year = {2007},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ttt.pdf}}
 
 @inproceedings{herbrich2007failurestructure,
 	abstract = {We investigate the problem of learning the dependencies among servers in large networks based on failure patterns in their up-time behaviour. We model up-times in terms of exponential distributions whose inverse lifetime parameters lmay vary with the state of other servers. Based on a conjugate Gamma prior over inverse lifetimes we identify the most likely network configuration given that any node has at most one parent. The method can be viewed as a special case of learning a continuous time Bayesian network. Our approach enables us to easily incorporate existing expert prior knowledge. Furthermore our method enjoys advantages over a state-of-the-art rule-based approach. We validate the approach on synthetic data and apply it to five year data for a set of over 500 servers at a server farm of a major Microsoft web site.},
@@ -258,7 +308,8 @@
 	publisher = {USENIX},
 	title = {Structure From Failure},
 	url = {https://www.herbrich.me/papers/sysml2007.pdf},
-	year = {2007}}
+	year = {2007},
+	bdsk-url-1 = {https://www.herbrich.me/papers/sysml2007.pdf}}
 
 @inproceedings{stern2007gametrees,
 	abstract = {We apply probability theory to the task of proving whether a goal can be achieved by a player in an adversarial game. Such problems are solved by searching the game tree. We view this tree as a graphical model which yields a distribution over the (Boolean) outcome of the search before it terminates. Experiments show that a best-first search algorithm guided by this distribution explores a similar number of nodes as Proof-Number Search to solve Go problems. Knowledge is incorporated into search by using domain-specific models to provide prior distributions over the values of leaf nodes of the game tree. These are surrogate for the unexplored parts of the tree. The parameters of these models can be learned from previous search trees. Experiments on Go show that the speed of problem solving can be increased by orders of magnitude by this technique but care must be taken to avoid over-fitting.},
@@ -267,7 +318,8 @@
 	pages = {839--846},
 	title = {Learning to Solve Game Trees},
 	url = {https://www.herbrich.me/papers/p839-stern.pdf},
-	year = {2007}}
+	year = {2007},
+	bdsk-url-1 = {https://www.herbrich.me/papers/p839-stern.pdf}}
 
 @inproceedings{herbrich2006trueskill,
 	abstract = {We present a new Bayesian skill rating system which can be viewed as a generalisation of the Elo system used in Chess. The new system tracks the uncertainty about player skills, explicitly models draws, can deal with any number of competing entities and can infer individual skills from team results. Inference is performed by approximate message passing on a factor graph representation of the model. We present experimental evidence on the increased accuracy and convergence speed of the system compared to Elo and report on our experience with the new rating system running in a large-scale commercial online gaming service under the name of TrueSkill.},
@@ -277,7 +329,8 @@
 	publisher = {The MIT Press},
 	title = {{TrueSkill(TM)}: A {Bayesian} Skill Rating System},
 	url = {https://www.herbrich.me/papers/trueskill.pdf},
-	year = {2006}}
+	year = {2006},
+	bdsk-url-1 = {https://www.herbrich.me/papers/trueskill.pdf}}
 
 @article{graepel2006ranking,
 	abstract = {Online game modes are gradually becoming the standard for console games, rather than an added bonus. But how do you get the right players playing against the right people, close enough in skill to be challenging, but not so difficult as to be frustrating?},
@@ -286,7 +339,8 @@
 	number = {10},
 	title = {Ranking and Matchmaking},
 	url = {https://www.herbrich.me/papers/Game-Developer-Feature-Article-Graepel-Herbrich.pdf},
-	year = {2006}}
+	year = {2006},
+	bdsk-url-1 = {https://www.herbrich.me/papers/Game-Developer-Feature-Article-Graepel-Herbrich.pdf}}
 
 @inproceedings{stern2006bayesianpatternranking,
 	abstract = {We investigate the problem of learning to predict moves in the board game of Go from game records of expert players. In particular, we obtain a probability distribution over legal moves for professional play in a given position. This distribution has numerous applications in computer Go, including serving as an efficient stand-alone Go player. It would also be effective as a move selector and move sorter for game tree search and as a training tool for Go players. Our method has two major components: a) a pattern extraction scheme for efficiently harvesting patterns of given size and shape from expert game records and b) a Bayesian learning algorithm (in two variants) that learns a distribution over the values of a move given a board position based on the local pattern context. The system is trained on 181,000 expert games and shows excellent prediction performance as indicated by its ability to perfectly predict the moves made by professional Go players in 34\% of test positions.},
@@ -295,7 +349,8 @@
 	pages = {873--880},
 	title = {{Bayesian} Pattern Ranking for Move Prediction in the Game of Go},
 	url = {https://www.herbrich.me/papers/p873-stern.pdf},
-	year = {2006}}
+	year = {2006},
+	bdsk-url-1 = {https://www.herbrich.me/papers/p873-stern.pdf}}
 
 @article{agarwal2005roc,
 	abstract = {We study generalization properties of the area under the ROC curve (AUC), a quantity that has been advocated as an evaluation criterion for the bipartite ranking problem. The AUC is a different term than the error rate used for evaluation in classification problems; consequently, existing generalization bounds for the classification error rate cannot be used to draw conclusions about the AUC. In this paper, we define the expected accuracy of a ranking function (analogous to the expected error rate of a classification function), and derive distribution-free probabilistic bounds on the deviation of the empirical AUC of a ranking function (observed on a finite data sequence) from its expected accuracy. We derive both a large deviation bound, which serves to bound the expected accuracy of a ranking function in terms of its empirical AUC on a test sequence, and a uniform convergence bound, which serves to bound the expected accuracy of a learned ranking function in terms of its empirical AUC on a training sequence. Our uniform convergence bound is expressed in terms of a new set of combinatorial parameters that we term the bipartite rank-shatter coefficients; these play the same role in our result as do the standard VC-dimension related shatter coefficients (also known as the growth function) in uniform convergence results for the classification error rate. A comparison of our result with a recent uniform convergence result derived by Freund et al. (2003) for a quantity closely related to the AUC shows that the bound provided by our result can be considerably tighter.},
@@ -305,7 +360,8 @@
 	title = {Generalization Bounds for the Area Under the {ROC} Curve},
 	url = {https://www.herbrich.me/papers/auc.pdf},
 	volume = {6},
-	year = {2005}}
+	year = {2005},
+	bdsk-url-1 = {https://www.herbrich.me/papers/auc.pdf}}
 
 @article{graepel2005pacbayesian,
 	abstract = {We consider bounds on the prediction error of classification algorithms based on sample compression. We refine the notion of a compression scheme to distinguish permutation and repetition invariant and non-permutation and repetition invariant compression schemes leading to different prediction error bounds. Also, we extend known results on compression to the case of non-zero empirical risk. We provide bounds on the prediction error of classifiers returned by mistakedriven online learning algorithms by interpreting mistake bounds as bounds on the size of the respective compression scheme of the algorithm. This leads to a bound on the prediction error of perceptron solutions that depends on the margin a support vector machine would achieve on the same training sample. Furthermore, using the property of compression we derive bounds on the average prediction error of kernel classifiers in the PAC-Bayesian framework. These bounds assume a prior measure over the expansion coefficients in the data-dependent kernel expansion and bound the average prediction error uniformly over subsets of the space of expansion coefficients.},
@@ -315,7 +371,8 @@
 	title = {{PAC-Bayesian} Compression Bounds on the Prediction Error of Learning Algorithms for Classification},
 	url = {https://www.herbrich.me/papers/graehertay05.pdf},
 	volume = {59},
-	year = {2005}}
+	year = {2005},
+	bdsk-url-1 = {https://www.herbrich.me/papers/graehertay05.pdf}}
 
 @article{gretton2005kernelindependence,
 	abstract = {We introduce two new functionals, the constrained covariance and the kernel mutual information, to measure the degree of independence of random variables. These quantities are both based on the covariance between functions of the random variables in reproducing kernel Hilbert spaces (RKHSs). We prove that when the RKHSs are universal, both functionals are zero if and only if the random variables are pairwise independent. We also show that the kernel mutual information is an upper bound near independence on the Parzen window estimate of the mutual information. Analogous results apply for two correlation-based dependence functionals introduced earlier: we show the kernel canonical correlation and the kernel generalised variance to be independence measures for universal kernels, and prove the latter to be an upper bound on the mutual information near independence. The performance of the kernel dependence functionals in measuring independence is verified in the context of independent component analysis.},
@@ -325,7 +382,8 @@
 	title = {Kernel Methods for Measuring Independence},
 	url = {https://www.herbrich.me/papers/gretton05a.pdf},
 	volume = {6},
-	year = {2005}}
+	year = {2005},
+	bdsk-url-1 = {https://www.herbrich.me/papers/gretton05a.pdf}}
 
 @inproceedings{gretton2005kernelcoco,
 	abstract = {We discuss reproducing kernel Hilbert space (RKHS)-based measures of statistical dependence, with emphasis on constrained covariance (COCO), a novel criterion to test dependence of random variables. We show that COCO is a test for independence if and only if the associated RKHSs are universal. That said, no independence test exists that can distinguish dependent and independent random variables in all circumstances. Dependent random variables can result in a COCO which is arbitrarily close to zero when the source densities are highly non-smooth. All current kernel-based independence tests share this behaviour. We demonstrate exponential convergence between the population and empirical COCO. Finally, we use COCO as a measure of joint neural activity between voxels in MRI recordings of the macaque monkey, and compare the results to the mutual information and the correlation. We also show the effect of removing breathing artefacts from the MRI recording.},
@@ -334,7 +392,8 @@
 	pages = {112--119},
 	title = {Kernel Constrained Covariance for Dependence Measurement},
 	url = {https://www.herbrich.me/papers/kcc.pdf},
-	year = {2005}}
+	year = {2005},
+	bdsk-url-1 = {https://www.herbrich.me/papers/kcc.pdf}}
 
 @techreport{herbrich2005gaussianep,
 	abstract = {In this short note we will re-derive the Gaussian expectation propagation (Gaussian EP) algorithm as presented in Minka (2001) and demonstrate an application of Gaussian EP to approximate multi-dimensional truncated Gaussians.},
@@ -342,7 +401,8 @@
 	institution = {Microsoft Research},
 	title = {On {Gaussian} Expectation Propagation},
 	url = {https://www.herbrich.me/papers/EP.pdf},
-	year = {2005}}
+	year = {2005},
+	bdsk-url-1 = {https://www.herbrich.me/papers/EP.pdf}}
 
 @techreport{herbrich2005minimizingkl,
 	abstract = {In this note we show that minimising the Kullback--Leibler divergence over a family in the class of exponential distributions is achieved by matching the expected natural statistic. We will also give an explicit update formula for distributions with only one likelihood term.},
@@ -350,7 +410,8 @@
 	institution = {Microsoft Research},
 	title = {{Minimising the Kullback-Leibler Divergence}},
 	url = {https://www.herbrich.me/papers/KL.pdf},
-	year = {2005}}
+	year = {2005},
+	bdsk-url-1 = {https://www.herbrich.me/papers/KL.pdf}}
 
 @incollection{herbrich2005versionspace,
 	abstract = {We investigate the generalisation performance of consistent classifiers, i.e. classifiers that are contained in the so-called version space, both from a theoretical and experimental angle. In contrast to classical VC analysis - where no single classifier within version space is singled out on grounds of a generalisation error bound - the data dependent structural risk minimisation framework suggests that there exists one particular classifier that is to be preferred because it minimises the generalisation error bound. This is usually taken to provide a theoretical justification for learning algorithms such as the well known support vector machine. A reinterpretation of a recent PAC-Bayesian result, however, reveals that given a suitably chosen hypothesis space there exists a large fraction of classifiers with small generalisation error although we cannot readily identify them for a specific learning task. In the particular case of linear classifiers we show that classifiers found by the classical perceptron algorithm have guarantees bounded by the size of version space. These results are complemented with an empirical study for kernel classifiers on the task of handwritten digit recognition which demonstrates that even classifiers with a small margin may exhibit excellent generalisation. In order to perform this analysis we introduce the kernel Gibbs sampler - an algorithm which can be used to sample consistent kernel classifiers.},
@@ -361,7 +422,8 @@
 	publisher = {Springer},
 	title = {The Structure of Version Space},
 	url = {https://www.herbrich.me/papers/holmes_mod2.pdf},
-	year = {2005}}
+	year = {2005},
+	bdsk-url-1 = {https://www.herbrich.me/papers/holmes_mod2.pdf}}
 
 @inproceedings{agarwal2004roc,
 	abstract = {The area under the ROC curve (AUC) has been advocated as an evaluation criterion for the bipartite ranking problem. We study large deviation properties of the AUC; in particular, we derive a distribution-free large deviation bound for the AUC which serves to bound the expected accuracy of a ranking function in terms of its empirical AUC on an independent test sequence. A comparison of our result with a corresponding large deviation result for the classification error rate suggests that the test sample size required to obtain an epsilon-accurate estimate of the expected accuracy of a ranking function with delta-confidence is larger than that required to obtain an epsilon-accurate estimate of the expected error rate of a classification function with the same confidence. A simple application of the union bound allows the large deviation bound to be extended to learned ranking functions chosen from finite function classes.},
@@ -370,7 +432,8 @@
 	pages = {9--16},
 	title = {A Large Deviation Bound for the Area Under the {ROC} Curve},
 	url = {https://www.herbrich.me/papers/nips04-auc.pdf},
-	year = {2004}}
+	year = {2004},
+	bdsk-url-1 = {https://www.herbrich.me/papers/nips04-auc.pdf}}
 
 @inproceedings{graepel2004learningtofight,
 	abstract = {We apply reinforcement learning to the problem of finding good policies for a fighting agent in a commercial computer game. The learning agent is trained using the SARSA algorithm for on-policy learning of an action-value function represented by linear and neural network function approximators. We discuss the selection and construction of features, actions, and rewards as well as other design choices necessary to integrate the learning process into the game. The learning agent is trained against the built-in AI of the game with different rewards encouraging aggressive or defensive behaviour. We show that the learning agent finds interesting (and partly near optimal) policies in accordance with the reward functions provided. We also discuss the particular challenges arising in the application of reinforcement learning to the domain of computer games.},
@@ -379,7 +442,8 @@
 	pages = {193--200},
 	title = {Learning to Fight},
 	url = {https://www.herbrich.me/papers/graehergol04.pdf},
-	year = {2004}}
+	year = {2004},
+	bdsk-url-1 = {https://www.herbrich.me/papers/graehergol04.pdf}}
 
 @inproceedings{rajaram2004poissonnetworks,
 	abstract = {Modelling structured multivariate point process data has wide ranging applications like understanding neural activity, developing faster file access systems and learning dependencies among servers in large networks. In this paper, we develop the Poisson network model for representing multivariate structured Poisson processes. In our model each node of the network represents a Poisson process. The novelty of our work is that waiting times of a process are modelled by an exponential distribution with a piecewise constant rate function that depends on the event counts of its parents in the network in a generalised linear way. Our choice of model allows to perform exact sampling from arbitrary structures. We adopt a Bayesian approach for learning the network structure. Further, we discuss fixed point and sampling based approximations for performing inference of rate functions in Poisson networks.},
@@ -388,7 +452,8 @@
 	pages = {277--284},
 	title = {{Poisson}-Networks : A Model for Structured {Poisson} Processes},
 	url = {https://www.herbrich.me/papers/spikenets.pdf},
-	year = {2004}}
+	year = {2004},
+	bdsk-url-1 = {https://www.herbrich.me/papers/spikenets.pdf}}
 
 @inproceedings{graepel2003sdm,
 	abstract = {Knowledge about local invariances with respect to given pattern transformations can greatly improve the accuracy of classification. Previous approaches are either based on regularisation or on the generation of virtual (transformed) examples. We develop a new framework for learning linear classifiers under known transformations based on semidefinite programming. We present a new learning algorithm - the Semidefinite Programming Machine (SDPM) - which is able to find a maximum margin hyperplane when the training examples are polynomial trajectories instead of single points. The solution is found to be sparse in dual variables and allows to identify those points on the trajectory with minimal real-valued output as virtual support vectors. Extensions to segments of trajectories, to more than one transformation parameter, and to learning with kernels are discussed. In experiments we use a Taylor expansion to locally approximate rotational invariance in pixel images from USPS and find improvements over known methods.},
@@ -397,7 +462,8 @@
 	pages = {33--40},
 	title = {Invariant Pattern Recognition by Semidefinite Programming Machines},
 	url = {https://www.herbrich.me/papers/sdpm.pdf},
-	year = {2003}}
+	year = {2003},
+	bdsk-url-1 = {https://www.herbrich.me/papers/sdpm.pdf}}
 
 @inproceedings{graepel2003sdpwithperceptron,
 	abstract = {We present a modified version of the perceptron learning algorithm (PLA) which solves semidefinite programs (SDPs) in polynomial time. The algorithm is based on the following three observations: (i) Semidefinite programs are linear programs with infinitely many (linear) constraints; (ii) every linear program can be solved by a sequence of constraint satisfaction problems with linear constraints; (iii) in general, the perceptron learning algorithm solves a constraint satisfaction problem with linear constraints in finitely many updates. Combining the PLA with a probabilistic rescaling algorithm (which, on average, increases the size of the feasable region) results in a probabilistic algorithm for solving SDPs that runs in polynomial time. We present preliminary results which demonstrate that the algorithm works, but is not competitive with state-of-the-art interior point methods.},
@@ -407,7 +473,8 @@
 	publisher = {The MIT Press},
 	title = {Semi-Definite Programming by Perceptron Learning},
 	url = {https://www.herbrich.me/papers/sdpm-pla.pdf},
-	year = {2003}}
+	year = {2003},
+	bdsk-url-1 = {https://www.herbrich.me/papers/sdpm-pla.pdf}}
 
 @inproceedings{gretton2003kmi,
 	abstract = {We introduce a new contrast function, the kernel mutual information (KMI), to measure the degree of independence of continuous random variables. This contrast function provides an approximate upper bound on the mutual information, as measured near independence, and is based on a kernel density estimate of the mutual information between a discretised approximation of the continuous random variables. We show that Bach and Jordan's kernel generalised variance (KGV) is also an upper bound on the same kernel density estimate, but is looser. Finally, we suggest that the addition of a regularising term in the KGV causes it to approach the KMI, which motivates the introduction of this regularisation.},
@@ -416,7 +483,8 @@
 	pages = {880--883},
 	title = {The Kernel Mutual Information},
 	url = {https://www.herbrich.me/papers/GreHerSmo03.pdf},
-	year = {2003}}
+	year = {2003},
+	bdsk-url-1 = {https://www.herbrich.me/papers/GreHerSmo03.pdf}}
 
 @inproceedings{harrington2003onlinebpm,
 	abstract = {We present a new and simple algorithm for learning large margin classifiers that works in a truly online manner. The algorithm generates a linear classifier by averaging the weights associated with several perceptron-like algorithms run in parallel in order to approximate the Bayes point. A random subsample of the incoming data stream is used to ensure diversity in the perceptron solutions. We experimentally study the algorithm's performance on online and batch learning settings. The online experiments showed that our algorithm produces a low prediction error on the training sequence and tracks the presence of concept drift. On the batch problems its performance is comparable to the maximum margin algorithm which explicitly maximises the margin.},
@@ -425,7 +493,8 @@
 	pages = {241--252},
 	title = {Online {Bayes} Point Machines},
 	url = {https://www.herbrich.me/papers/OBPM.pdf},
-	year = {2003}}
+	year = {2003},
+	bdsk-url-1 = {https://www.herbrich.me/papers/OBPM.pdf}}
 
 @article{herbrich2003intro,
 	author = {Herbrich, Ralf and Graepel, Thore},
@@ -434,7 +503,8 @@
 	title = {Introduction to the Special Issue on Learning Theory},
 	url = {https://www.herbrich.me/papers/lt.pdf},
 	volume = {4},
-	year = {2003}}
+	year = {2003},
+	bdsk-url-1 = {https://www.herbrich.me/papers/lt.pdf}}
 
 @book{herbrich2002learningkernelclassifiers,
 	author = {Herbrich, Ralf},
@@ -452,7 +522,8 @@
 	title = {A {PAC-Bayesian} Margin Bound for Linear Classifiers},
 	url = {https://www.herbrich.me/papers/ieee-pacbayes.pdf},
 	volume = {48},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ieee-pacbayes.pdf}}
 
 @incollection{herbrich2002learning,
 	author = {Herbrich, Ralf and Williamson, Robert C},
@@ -462,7 +533,8 @@
 	publisher = {The MIT Press},
 	title = {Learning and Generalization: Theoretical Bounds},
 	url = {https://www.herbrich.me/papers/HerWil02.pdf},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://www.herbrich.me/papers/HerWil02.pdf}}
 
 @article{herbrich2002algorithmicluckiness,
 	abstract = {Classical statistical learning theory studies the generalisation performance of machine learning algorithms rather indirectly. One of the main detours is that algorithms are studied in terms of the hypothesis class that they draw their hypotheses from. In this paper, motivated by the luckiness framework of Shawe-Taylor et al. (1998), we study learning algorithms more directly and in a way that allows us to exploit the serendipity of the training sample. The main difference to previous approaches lies in the complexity measure; rather than covering all hypotheses in a given hypothesis space it is only necessary to cover the functions which could have been learned using the fixed learning algorithm. We show how the resulting framework relates to the VC, luckiness and compression frameworks. Finally, we present an application of this framework to the maximum margin algorithm for linear classifiers which results in a bound that exploits the margin, the sparsity of the resultant weight vector, and the degree of clustering of the training data in feature space.},
@@ -472,7 +544,8 @@
 	title = {Algorithmic Luckiness},
 	url = {https://www.herbrich.me/papers/algoluck.pdf},
 	volume = {3},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://www.herbrich.me/papers/algoluck.pdf}}
 
 @inproceedings{hill2002ap,
 	abstract = {In this paper we study the problem of generalisation in information retrieval. In particular we study precision-recall curves and the average precision value. We provide two types of bounds: large-deviation bounds of the average precision and maximum deviation bounds with respect to a given point of the precision recall curve. The first type of bounds are useful to answer the question: how far can true average precision be from the value observed on a test collection? The second is useful for obtaining bounds on average precision when tight bounds on a particular point of the curve can be established, as is the case when training SVMs or Perceptrons for document categorisation.},
@@ -480,7 +553,8 @@
 	booktitle = {Proceedings of the ACM SIGIR Workshop on Mathematical and Formal Methods in Information Retrieval},
 	title = {Average Precision and the Problem of Generalisation},
 	url = {https://www.herbrich.me/papers/hill.pdf},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://www.herbrich.me/papers/hill.pdf}}
 
 @inproceedings{lawrence2002ivm,
 	abstract = {We present a framework for sparse Gaussian process (GP) methods which uses forward selection with criteria based on information-theoretical principles, previously suggested for active learning. In contrast to most previous work on sparse GPs, our goal is not only to learn sparse predictors (which can be evaluated in $O(d)$ rather than $O(n)$, $d \ll n$, $n$ the number of training points), but also to perform training under strong restrictions on time and memory requirements. The scaling of our method is at most $O(n \cdot d^2)$, and in large real-world classification experiments we show that it can match prediction performance of the popular support vector machine (SVM), yet it requires only a fraction of the training time. In contrast to the SVM, our approximation produces estimates of predictive probabilities ("error bars"), allows for Bayesian model selection and is less complex in implementation.},
@@ -489,7 +563,8 @@
 	pages = {609--616},
 	title = {Fast Sparse {Gaussian} Process Methods: The Informative Vector Machine},
 	url = {https://www.herbrich.me/papers/ivm.pdf},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ivm.pdf}}
 
 @inproceedings{li2002unevenmargins,
 	abstract = {The perceptron algorithm with margins is a simple, fast and effective learning algorithm for linear classifiers; it produces decision hyperplanes within some constant ratio of the maximal margin. In this paper we study this algorithm and a new variant: the perceptron algorithm with uneven margins, tailored for document categorisation problems (i.e. problems where classes are highly unbalanced and performance depends on the ranking of patterns). We discuss the interest of these algorithms from a theoretical point of view, provide a generalisation of Novikoff's theorem for uneven margins, give a geometrically description of these algorithms and show experimentally that both algorithms yield equal or better performances than support vector machines, while reducing training time and sparsity, in classification (USPS) and document categorisation (Reuters) problems.},
@@ -498,7 +573,8 @@
 	pages = {379--386},
 	title = {The Perceptron Algorithm with Uneven Margins},
 	url = {https://www.herbrich.me/papers/paum.pdf},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://www.herbrich.me/papers/paum.pdf}}
 
 @inproceedings{robertson2002trec,
 	abstract = {Six runs were submitted for the Adaptive Filtering track, four on the adaptive filtering task (ok11af??), and two on the routing task (msPUM?). The adaptive filtering system has been somewhat modified from the one used for TREC-10, largely for efficiently and flexibility reasons; the basic filtering algorithms remain similar to those used in recent TRECs. For the routing task, a completely new system based on perceptrons with uneven margins was used.},
@@ -507,7 +583,8 @@
 	pages = {361--368},
 	title = {{Microsoft Cambridge} at {TREC} 2002: Filtering Track},
 	url = {https://www.herbrich.me/papers/trec2002.pdf},
-	year = {2002}}
+	year = {2002},
+	bdsk-url-1 = {https://www.herbrich.me/papers/trec2002.pdf}}
 
 @inproceedings{graepel2001go,
 	abstract = {We consider the game of Go from the point of view of machine learning and as a well-defined domain for learning on graph representations. We discuss the representation of both board positions and candidate moves and introduce the common fate graph (CFG) as an adequate representation of board positions for learning. Single candidate moves are represented as feature vectors with features given by subgraphs relative to the given move in the CFG. Using this representation we train a support vector machine (SVM) and a kernel perceptron to discriminate good moves from bad moves on a collection of life-and-death problems and on 9x9 game records. We thus obtain kernel machines that solve Go problems and play 9x9 Go.},
@@ -516,7 +593,8 @@
 	pages = {347--352},
 	title = {Learning on Graphs in the Game of Go},
 	url = {https://www.herbrich.me/papers/go.pdf},
-	year = {2001}}
+	year = {2001},
+	bdsk-url-1 = {https://www.herbrich.me/papers/go.pdf}}
 
 @inproceedings{gretton2001svr,
 	abstract = {In this paper, we demonstrate the use of support vector regression (SVR) techniques for black-box system identification. There methods derive from statistical learning theory, and are of great theoretical and practical interest. We briefly describe the theory underpinning SVR, and compare support vector methods with other approaches using radial basis networks. Finally, we apply SVR to modeling the behaviour of a hydralic robot arm, and show that SVR improves on previously published results.},
@@ -534,7 +612,8 @@
 	title = {{Bayes} Point Machines},
 	url = {https://www.herbrich.me/papers/bpm.pdf},
 	volume = {1},
-	year = {2001}}
+	year = {2001},
+	bdsk-url-1 = {https://www.herbrich.me/papers/bpm.pdf}}
 
 @inproceedings{herbrich2001algoluck,
 	abstract = {In contrast to standard statistical learning theory which studies uniform bounds on the expected error we present a framework that exploits the specific learning algorithm used. Motivated by the luckiness framework [Taylor et al., 1998] we are also able to exploit the serendipity of the training sample. The main difference to previous approaches lies in the complexity measure; rather than covering all hypotheses in a given hypothesis space it is only necessary to cover the functions which could have been learned using the fixed learning algorithm. We show how the resulting framework relates to the VC, luckiness and compression frameworks. Finally, we present an application of this framework to the maximum margin algorithm for linear classifiers which results in a bound that exploits both the margin and the distribution of the data in feature space.},
@@ -543,7 +622,8 @@
 	pages = {391--397},
 	title = {Algorithmic Luckiness},
 	url = {https://www.herbrich.me/papers/nips01_algoluck.pdf},
-	year = {2001}}
+	year = {2001},
+	bdsk-url-1 = {https://www.herbrich.me/papers/nips01_algoluck.pdf}}
 
 @inproceedings{scholkopf2001representer,
 	abstract = {Wahba's classical representer theorem states that the solutions of certain risk minimization problems involving an empirical risk term and a quadratic regularizer can be written as expansions in terms of the training examples. We generalize the theorem to a larger class of regularizers and empirical risk terms, and give a self-contained proof utilizing the feature space associated with a kernel. The result shows that a wide range of problems have optimal solutions that live in the finite dimensional span of the training examples mapped into feature space, thus enabling us to carry out kernel algorithms independent of the (potentially infinite) dimensionality of the feature space.},
@@ -552,7 +632,8 @@
 	pages = {416--426},
 	title = {A Generalized Representer Theorem},
 	url = {https://www.herbrich.me/papers/colt2001.pdf},
-	year = {2001}}
+	year = {2001},
+	bdsk-url-1 = {https://www.herbrich.me/papers/colt2001.pdf}}
 
 @inproceedings{herbrich2000kernelgibbs,
 	abstract = {We present an algorithm that samples the hypothesis space of kernel classifiers. Given a uniform prior over normalised weight vectors and a likelihood based on a model of label noise leads to a piecewise constant posterior that can be sampled by the kernel Gibbs sampler (KGS). The KGS is a Markov Chain Monte Carlo method that chooses a random direction in parameter space and samples from the resulting piecewise constant density along the line chosen. The KGS can be used as an analytical tool for the exploration of Bayesian transduction, Bayes point machines, active learning, and evidence-based model selection on small data sets that are contaminated with label noise. For a simple toy example we demonstrate experimentally how a Bayes point machine based on the KGS outperforms an SVM that is incapable of taking into account label noise.},
@@ -562,7 +643,8 @@
 	publisher = {The MIT Press},
 	title = {The Kernel Gibbs Sampler},
 	url = {https://www.herbrich.me/papers/kernel-gibbs-sampler.pdf},
-	year = {2000}}
+	year = {2000},
+	bdsk-url-1 = {https://www.herbrich.me/papers/kernel-gibbs-sampler.pdf}}
 
 @inproceedings{graepel2000sparse,
 	abstract = {We provide small sample size bounds on the generalisation error of linear classiers that are sparse in their dual representation given by the expansion coecients of the weight vector in terms of the training data. These results theoretically justify algorithms like the Support Vector Machine, the Relevance Vector Machine and K-nearest-neighbour. The
@@ -572,7 +654,8 @@
 	pages = {298--303},
 	title = {Generalisation Error Bounds for Sparse Linear Classifiers},
 	url = {https://www.herbrich.me/papers/colt00_sparse.pdf},
-	year = {2000}}
+	year = {2000},
+	bdsk-url-1 = {https://www.herbrich.me/papers/colt00_sparse.pdf}}
 
 @inproceedings{graepel2000marginsparsity,
 	abstract = {We present an improvement of Novikoff's perceptron convergence theorem. Reinterpreting this mistake bound as a margin dependent sparsity guarantee allows us to give a PAC-style generalisation error bound for the classifier learned by the dual perceptron learning algorithm. The bound value crucially depends on the margin a support vector machine would achieve on the same data set using the same kernel. Ironically, the bound yields better guarantees than are currently available for the support vector solution itself.},
@@ -582,7 +665,8 @@
 	publisher = {The MIT Press},
 	title = {From Margin to Sparsity},
 	url = {https://www.herbrich.me/papers/perc.pdf},
-	year = {2000}}
+	year = {2000},
+	bdsk-url-1 = {https://www.herbrich.me/papers/perc.pdf}}
 
 @phdthesis{herbrich2000phd,
 	author = {Herbrich, Ralf},
@@ -598,7 +682,8 @@
 	publisher = {The MIT Press},
 	title = {Large Scale Bayes Point Machines},
 	url = {https://www.herbrich.me/papers/mnist.pdf},
-	year = {2000}}
+	year = {2000},
+	bdsk-url-1 = {https://www.herbrich.me/papers/mnist.pdf}}
 
 @inproceedings{herbrich2000pacbayesiansvm,
 	abstract = {We present a bound on the generalisation error of linear classifiers in terms of a refined margin quantity on the training set. The result is obtained in a PAC-Bayesian framework and is based on geometrical arguments in the space of linear classifiers. The new bound constitutes an exponential improvement of the so far tightest margin bound by Shawe-Taylor et al. and scales logarithmically in the inverse margin. Even in the case of less training examples than input dimensions sufficiently large margins lead to non-trivial bound values and - for maximum margins - to a vanishing complexity term. Furthermore, the classical margin is too coarse a measure for the essential quantity that controls the generalisation error: the volume ratio between the whole hypothesis space and the subset of consistent hypotheses. The practical relevance of the result lies in the fact that the well-known support vector machine is optimal w.r.t. the new bound only if the feature vectors are all of the same length. As a consequence we recommend to use SVMs on normalised feature vectors only - a recommendation that is well supported by our numerical experiments on two benchmark data sets.},
@@ -607,7 +692,8 @@
 	pages = {224--230},
 	title = {A {PAC-Bayesian} Margin Bound for Linear Classifiers: Why SVMs work},
 	url = {https://www.herbrich.me/papers/pacbayes.pdf},
-	year = {2000}}
+	year = {2000},
+	bdsk-url-1 = {https://www.herbrich.me/papers/pacbayes.pdf}}
 
 @inproceedings{herbrich2000robustbpm,
 	abstract = {Support Vector Machines choose the hypothesis corresponding to the centre of the largest hypersphere that can be inscribed in version space. If version space is elongated or irregularly shaped a potentially superior approach is take into account the whole of version space. We propose to construct the Bayes point which is approximated by the centre of mass. Our implementation of a Bayes Point Machine (BPM) uses an ergodic billiard to estimate this point in the kernel space. We show that BPMs outperform hard margin Support Vector Machines (SVMs) on real world datasets. We introduce a technique that allows the BPM to construct hypotheses with non-zero training error similar to soft margin SVMs with quadratic penelisation of the margin slacks. An experimental study reveals that with decreasing penelisation of training error the improvement of BPMs over SVMs decays, a finding that is explained by geometrical considerations.},
@@ -616,7 +702,8 @@
 	pages = {49--54},
 	title = {Robust {Bayes} Point Machines},
 	url = {https://www.herbrich.me/papers/esann00.pdf},
-	year = {2000}}
+	year = {2000},
+	bdsk-url-1 = {https://www.herbrich.me/papers/esann00.pdf}}
 
 @inproceedings{herbrich2000sparsitymarginlinear,
 	abstract = {We provide small sample size bounds on the generalisation error of linear classifiers that take advantage of large observed margins on the training set and sparsity in the data dependent expansion coefficients. It is already known from results in the luckiness framework that both criteria independently have a large impact on the generalisation error. Our new results show that they can be combined which theoretically justifies learning algorithms like the Support Vector Machine or the Relevance Vector Machine. In contrast to previous studies we avoid using the classical technique of symmetrisation by a ghost sample but directly using the sparsity for the estimation of the generalisation error. We demonstrate that our result leads to practical useful results even in case of small sample size if the training set witnesses our prior belief in sparsity and large margins.},
@@ -625,7 +712,8 @@
 	pages = {304--308},
 	title = {Sparsity vs. Large Margins for Linear Classifiers},
 	url = {https://www.herbrich.me/papers/colt00_sparsemargin.pdf},
-	year = {2000}}
+	year = {2000},
+	bdsk-url-1 = {https://www.herbrich.me/papers/colt00_sparsemargin.pdf}}
 
 @inproceedings{graepel1999bayesiantransduction,
 	abstract = {Transduction is an inference principle that takes a training sample and aims at estimating the values of a function at given points contained in the so-called working sample. Hence, transduction is a less ambitious task than induction which aims at inferring a functional dependency on the whole of input space. As a consequence, however, transduction provides a confidence measure on single predictions rather than classifiers, a feature particularly important for risk-sensitive applications. We consider the case of binary classification by linear discriminant functions (perceptrons) in kernel space. From the transductive point of view, the infinite number of perceptrons is boiled down to a finite number of equivalence classes on the working sample each of which corresponds to a polyhedron in parameter space. In the Bayesian spirit the posteriori probability of a labelling of the working sample is determined as the ratio between the volume of the corresponding polyhedron and the volume of version space. Then the maximum posteriori scheme recommends to choose the labelling of maximum volume. We suggest to sample version space by an ergodic billiard in kernel space. Experimental results on real world data indicate that Bayesian Transduction compares favourably to the well-known Support Vector Machine, in particular if the posteriori probability of labellings is used as a confidence measure to exclude test points of low confidence.},
@@ -635,7 +723,8 @@
 	publisher = {The MIT Press},
 	title = {{Bayesian} Transduction},
 	url = {https://www.herbrich.me/papers/trans.pdf},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/trans.pdf}}
 
 @inproceedings{graepel1999proximity,
 	abstract = {We provide a new linear program to deal with classification of data in the case of data given in terms of pairwise proximities. This allows to avoid the problems inherent in using feature spaces with indefinite metric in Support Vector Machines, since the notion of a margin is purely needed in input space where the classification actually occurs. Moreover in our approach we can enforce sparsity in the proximity representation by sacrificing training error. This turns out to be favorable for proximity data. Similar to nu-SV methods, the only parameter needed in the algorithm is the (asymptotical) number of data points being classified with a margin. Finally, the algorithm is successfully compared with nu-SV learning in proximity space and K-nearest-neighbors on real world data from Neuroscience and molecular biology.},
@@ -644,7 +733,8 @@
 	pages = {304--309},
 	title = {Classification on Proximity Data with {LP}-Machines},
 	url = {https://www.herbrich.me/papers/icann99_proxy.pdf},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/icann99_proxy.pdf}}
 
 @inproceedings{herbrich1999bpm,
 	abstract = {From a Bayesian perspective Support Vector Machines choose the hypothesis corresponding to the largest possible hypersphere that can be inscribed in version space, i.e. in the space of all consistent hypotheses given a training set. Those boundaries of version space which are tangent to the hypersphere define the support vectors. An alternative and potentially better approach is to construct the hypothesis using the whole of version space. This is achieved by using a Bayes Point Machine which finds the midpoint of the region of intersection of all hyperplanes bisecting version space into two halves of equal volume (the Bayes point). It is known that the center of mass of version space approximates the Bayes point. We suggest estimating the center of mass by averaging over the trajectory of a billiard ball bouncing in version space. Experimental results are presented indicating that Bayes Point Machines consistently outperform Support Vector Machines.},
@@ -653,7 +743,8 @@
 	pages = {23--27},
 	title = {{Bayes} Point Machines : Estimating the {Bayes} Point in Kernel Space},
 	url = {https://www.herbrich.me/papers/ijcai99.pdf},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/ijcai99.pdf}}
 
 @inproceedings{herbrich1999ordinalregression,
 	abstract = {We investigate the problem of predicting variables of ordinal scale. This task is referred to as ordinal regression and is complementary to the standard machine learning tasks of classification and metric regression. In contrast to statistical models we present a distribution independent formulation of the problem together with uniform bounds of the risk functional. The approach presented is based on a mapping from objects to scalar utility values. Similar to Support Vector methods we derive a new learning algorithm for the task of ordinal regression based on large margin rank boundaries. We give experimental results for an information retrieval task: learning the order of documents w.r.t. an initial query. Experimental results indicate that the presented algorithm outperforms more naive approaches to ordinal regression such as Support Vector classification and Support Vector regression in the case of more than two ranks.},
@@ -662,7 +753,8 @@
 	pages = {97--102},
 	title = {Support Vector Learning for Ordinal Regression},
 	url = {https://www.herbrich.me/papers/icann99_ordinal.pdf},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/icann99_ordinal.pdf}}
 
 @incollection{herbrich1999largemarginrank,
 	abstract = {In contrast to the standard machine learning tasks of classification and metric regression we investigate the problem of predicting variables of ordinal scale, a setting referred to as ordinal regression. This problem arises frequently in the social sciences and in information retrieval where human preferences play a major role. Whilst approaches proposed in statistics rely on a probability model of a latent (unobserved) variable we present a distribution independent risk formulation of ordinal regression which allows us to derive a uniform convergence bound. Applying this bound we present a large margin algorithm that is based on a mapping from objects to scalar utility values thus classifying pairs of objects. We give experimental results for an information retrieval task which show that our algorithm outperforms more naive approaches to ordinal regression such as Support Vector Classification and Support Vector Regression in the case of more than two ranks.},
@@ -673,7 +765,8 @@
 	publisher = {The MIT Press},
 	title = {Large Margin Rank Boundaries for Ordinal Regression},
 	url = {https://www.herbrich.me/papers/nips98_ordinal.pdf},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/nips98_ordinal.pdf}}
 
 @article{herbrich1999neuralnetworks,
 	abstract = {Neural Networks were developed in the sixties as devices for classification and regression. The approach was originally inspired from Neuroscience. Its attractiveness lies in the ability to 'learn', i.e. to generalize to as yet unseen observations. One aim of this paper is to give an introduction to the technique of Neural Networks and an overview of the most popular architectures. We start from statistical learning theory to introduce the basics of learning. Then, we give an overview of the general principles of neural networks and of their use in the field of Economics. A second purpose is to introduce a recently developed Neural Network Learning technique, so called Support Vector Network Learning, which is an application of ideas from statistical learning theory. This approach has shown very promising results on problems with a limited amount of training examples. Moreover, utilizing a technique that is known as the kernel trick, Support Vector Networks can easily be adapted to nonlinear models. Finally, we present an economic application of this approach from the field of preference learning.},
@@ -683,7 +776,8 @@
 	title = {Neural Networks in Economics : Background, Applications and New Developments},
 	url = {https://www.herbrich.me/papers/herkeilgraebollober99.pdf},
 	volume = {11},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/herkeilgraebollober99.pdf}}
 
 @inproceedings{herbrich1999ann,
 	abstract = {In this paper we propose a new learning algorithm for classification learning based on the Support Vector Machine (SVM) approach. Existing approaches for constructing SVMs are based on minimization of a regularized margin loss where the margin is treated equivalently for each train- ing pattern. We propose a reformulation of the minimization problem such that adaptive margins for each training pattern are utilized, which we call the Adaptive Margin (AM)-SVM. We give bounds on the generalization error of AM-SVMs which justify their robustness against outliers, and show experimentally that the generalization error of AM-SVMs is comparable to classical SVMs on benchmark datasets from the UCI repository.},
@@ -692,7 +786,8 @@
 	pages = {97--102},
 	title = {Adaptive Margin Support Vector Machines for Classification},
 	url = {https://www.herbrich.me/papers/icann99_ann.pdf},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/icann99_ann.pdf}}
 
 @incollection{weston1999ann,
 	abstract = {In this chapter we present a new learning algorithm, Leave-One-Out (LOO -) SVMs and its generalization Adaptive Margin (AM-) SVMs, inspired by a recent upper bound on the leave-one-out error proved for kernel classifiers by Jaakkola and Haussler. The new approach minimizes the expression given by the bound in an attempt to minimize the leave-one-out error. This gives a convex optimization problem which constructs a sparse linear classifier in feature space using the kernel technique. As such the algorithm possesses many of the same properties as SVMs and Linear Programming (LP-) SVMs. These former techniques are based on the minimization of a regularized margin loss, where the margin is treated equivalently for each training pattern. We propose a minimization problem such that adaptive margins for each training pattern are utilized. Furthermore, we give bounds on the generalization error of the approach which justifies its robustness against outliers. We show experimentally that the generalization error of AM-SVMs is comparable to SVMs and LP-SVMs on benchmark datasets from the UCI repository.},
@@ -703,7 +798,8 @@
 	publisher = {The MIT Press},
 	title = {Adaptive Margin Support Vector Machines},
 	url = {https://www.herbrich.me/papers/nips98_ann.pdf},
-	year = {1999}}
+	year = {1999},
+	bdsk-url-1 = {https://www.herbrich.me/papers/nips98_ann.pdf}}
 
 @inproceedings{graepel1998classificationpairwise,
 	abstract = {We investigate the problem of learning a classification task on data represented in terms of their pairwise proximities. This representation does not refer to an explicit feature representation of the data items and is thus more general than the standard approach of using Euclidean feature vectors, from which pairwise proximities can always be calculated. Our first approach is based on a combined linear embedding and classification procedure resulting in an extension of the Optimal Hyperplane algorithm to pseudo-Euclidean data. As an alternative we present another approach based on a linear threshold model in the proximity values themselves, which is optimized using Structural Risk Minimization. We show that prior knowledge about the problem can be incorporated by the choice of distance measures and examine different metrics w.r.t. their generalization. Finally, the algorithms are successfully applied to protein structure data and to data from the cat's cerebral cortex. They show better performance than K-nearest-neighbor classification.},
@@ -713,7 +809,8 @@
 	publisher = {The MIT Press},
 	title = {Classification on Pairwise Proximity Data},
 	url = {https://www.herbrich.me/papers/graeherbollober99.pdf},
-	year = {1998}}
+	year = {1998},
+	bdsk-url-1 = {https://www.herbrich.me/papers/graeherbollober99.pdf}}
 
 @inproceedings{herbrich1998preference,
 	abstract = {In this paper we investigate the problem of learning a preference relation from a given set of ranked documents. We show that the Bayes's optimal decision function, when applied to learning a preference relation, may violate transitivity. This is undesirable for information retrieval, because it is in conflict with a document ranking based on the user's preferences. To overcome this problem we present a vector space based method that performs a linear mapping from documents to scalar utility values and thus guarantees transitivity. The learning of the relation between documents is formulated as a classification problem on pairs of documents and is solved using the principle of structural risk minimization for good generalization. The approach is extended to polynomial utility functions by using the potential function method (the so called "kernel trick"), which allows to incorporate higher order correlations of features into the utility function at minimal computational costs. The resulting algorithm is tested on an example with artificial data. The algorithm successfully learns the utility function underlying the training examples and shows good classification performance.},
@@ -722,14 +819,16 @@
 	pages = {80--84},
 	title = {Learning Preference Relations for Information Retrieval},
 	url = {https://www.herbrich.me/papers/hergraebollober98.pdf},
-	year = {1998}}
+	year = {1998},
+	bdsk-url-1 = {https://www.herbrich.me/papers/hergraebollober98.pdf}}
 
 @mastersthesis{herbrich1997master,
 	author = {Herbrich, Ralf},
 	school = {Technical University Berlin},
 	title = {Segmentierung mit Gaborfiltern zur Induktion struktureller Klassifikatoren auf Bilddaten},
 	url = {https://www.herbrich.me/papers/diplom.pdf},
-	year = {1997}}
+	year = {1997},
+	bdsk-url-1 = {https://www.herbrich.me/papers/diplom.pdf}}
 
 @inproceedings{herbrich1997segmentation,
 	abstract = {In image segmentation problems, there is usually a vast amount of filter operations available, a subset of which has to be selected and instantiated in order to obtain a satisfactory segmentation procedure for a particular do- main. In supervised segmentation, a mapping from features, such as filter outputs for individual pixels, to classes is induced automatically. However, since the sample size required for supervised learning grows exponentially in the number of features it is not feasible to learn a segmentation procedure from a large amount of possible filters. But we argue that automatic model selection methods are able to select a region model in terms of some filters.},
@@ -738,7 +837,8 @@
 	pages = {11--21},
 	title = {Generation of Task-Specific Segmentation Procedures as a Model Selection Task},
 	url = {https://www.herbrich.me/papers/herbrich97.pdf},
-	year = {1997}}
+	year = {1997},
+	bdsk-url-1 = {https://www.herbrich.me/papers/herbrich97.pdf}}
 
 @inproceedings{scheffer1997assessment,
 	abstract = {In order to rank the performance of machine learning algorithms, many researchs conduct experiments on benchmark datasets. Since most learning algorithms have domain-specific parameters, it is a popular custom to adapt these parameters to obtain a minimal error rate on the test set. The same rate is used to rank the algorithm which causes an optimistic bias. We quantify this bias, showing in particular that an algorithm with more parameters will probably be ranked higher than an equally good algorithm with fewer parameters. We demonstrate this result, showing the number of parameters and trials required in order to pretend to outperform C4.5 or FOIL, respectively, for various benchmark problems. We then describe how unbiased ranking experiments should be conducted.},
@@ -747,7 +847,8 @@
 	pages = {798--803},
 	title = {Unbiased Assesment of Learning Algorithms},
 	url = {https://www.herbrich.me/papers/scheffer97.pdf},
-	year = {1997}}
+	year = {1997},
+	bdsk-url-1 = {https://www.herbrich.me/papers/scheffer97.pdf}}
 
 @inproceedings{scheffer1996subsumption,
 	abstract = {The $\theta$-subsumption problem is crucial to the efficiency of ILP learning systems. We discuss two $\theta$-subsumption algorithms based on strategies for preselecting suitable matching literals. The class of clauses, for which subsumption becomes polynomial, is a superset of the deterministic clauses. We further map the general problem of $\theta$-subsumption to a certain problem of finding a clique of fixed size in a graph, and in return show that a specialization of the pruning strategy of the Carraghan and Pardalos clique algorithm provides a dramatic reduction of the subsumption search space. We also present empirical results for the mesh design data set.},
@@ -757,4 +858,5 @@
 	title = {Efficient $\Theta$-Subsumption Based on Graph Algorithms},
 	url = {https://www.herbrich.me/papers/scheffer96.pdf},
 	volume = {1314},
-	year = {1996}}
+	year = {1996},
+	bdsk-url-1 = {https://www.herbrich.me/papers/scheffer96.pdf}}
